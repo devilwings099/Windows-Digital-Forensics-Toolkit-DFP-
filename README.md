@@ -1,6 +1,8 @@
 # Windows-Digital-Forensics-Toolkit-DFP-
 A Python-based CLI tool for Windows digital forensics, offering modules for network, disk, memory, registry, logs, USB, prefetch, timeline, process, and persistence analysis.
 
+The entire project is contained in the [`dfp.py`](dfp.py) file.
+
 
 ## Description
 
@@ -22,6 +24,20 @@ The **Windows Digital Forensics Toolkit (DFP)** is a command-line application de
 ## Usage
 
 The application runs through a simple menu-driven interface, allowing users to select different forensic modules. Each module further offers specific investigative options, enabling targeted data acquisition.
+
+## Functions Overview (in `dfp.py`)
+
+- `main()`: Launches the menu interface and directs user to selected module.
+- `run_network_forensics()`: Provides options to list active connections and open ports.
+- `run_disk_forensics()`: Lists logical drives and file system information.
+- `run_memory_forensics()`: Displays running tasks and system memory details.
+- `run_registry_forensics()`: Allows querying of registry keys and startup entries.
+- `run_event_log_analysis()`: Enables querying and listing of Windows Event Logs.
+- `run_usb_device_analysis()`: Shows current and historical USB device data.
+- `run_prefetch_analysis()`: Lists contents of the Windows Prefetch folder.
+- `run_timeline_analysis()`: Gathers file timestamps and event log details.
+- `run_process_analysis()`: Lists running processes and full process information.
+- `run_persistence_analysis()`: Detects persistence via startup items and scheduled tasks.
 
 ## Platform
 
